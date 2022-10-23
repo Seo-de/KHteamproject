@@ -24,6 +24,7 @@
         <div class="login-button">
             <a href="/member/login" id="login">로그인</a>
             <a href="/member/signUp" id="signUp">회원가입</a>
+
         </div>
     </section>
 </body>
