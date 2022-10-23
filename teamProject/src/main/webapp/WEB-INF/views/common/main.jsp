@@ -22,8 +22,8 @@
             <p>당신의 취미도 BOND로 시작하세요.</p>
         </div>
         <div class="login-button">
-            <a href="../html/login.html" id="login">로그인</a>
-            <a href="../html/signUp.html" id="signUp">회원가입</a>
+            <a href="/html/login.html" id="login">로그인</a>
+            <a href="/html/signUp.html" id="signUp">회원가입</a>
         </div>
     </section>
 </body>

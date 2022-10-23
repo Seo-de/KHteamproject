@@ -18,24 +18,38 @@
     </div>
     <main>
         <div class="login-title">로그인</div>
-        <form action="#" method="post">
+        <form action="/member/login" method="post">
             <section class="inputbox">
-                <input type="text" name="inputEmail" placeholder="이메일 입력" required>
+                <input type="text" name="inputEmail" placeholder="이메일 입력" required
+                autocomplete="off" value="${cookie.saveId.value}">
             </section>
             <section class="inputbox">
                 <input type="password" name="inputPw" placeholder="비밀번호 입력" required>
             </section>
             <button class="inputbox login-btn">로그인</button>
             <section class="saveId-area">
-                <input type="checkbox" name="saveId" id="saveId"> 
+
+            <%-- 쿠키에 svaeId 있을 때 --%>
+            <c:if test="${!empty cookie.saveId.value}">
+                <c:set var="temp" value="checked"/>
+            </c:if>
+
+                <input type="checkbox" name="saveId" id="saveId" ${temp}> 
                 <label for="saveId">아이디 저장</label> 
             </section>
         
             <p class="text-area">
                 본드가 처음이신가요?
-                <a href="../html/signUp.html">회원가입</a>
+                <a href="/html/signUp.html">회원가입</a>
             </p>
         </form>
     </main>
+     <c:if test="${!empty sessionScope.message}">
+        <script>
+            alert("${sessionScope.message}")
+        </script>
+
+        <c:remove var="message" scope="session"/>
+     </c:if>
 </body>
 </html>
