@@ -13,7 +13,7 @@
 <body>
     <div class="top-logo">
         <a href="#">
-            <img src="/resources/images/home-logo.png" id="home-logo">
+            <img src="/teamProject/resources/images/home-logo.png" id="home-logo">
         </a>
     </div>
     <main>
