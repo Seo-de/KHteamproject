@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="top-logo">
-        <a href="/html/main.html">
+        <a href="#">
             <img src="/resources/images/home-logo.png" id="home-logo">
         </a>
     </div>
@@ -40,7 +40,7 @@
         
             <p class="text-area">
                 본드가 처음이신가요?
-                <a href="/html/signUp.html">회원가입</a>
+                <a href="/member/signUp">회원가입</a>
             </p>
         </form>
     </main>

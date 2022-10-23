@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인/회원가입 화면</title>
 
-    <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="/teamProject/resources/css/main.css">
 </head>
 
 <body>
     <section class="home-logo-area">
-        <div><img src="/resources/images/home-logo-white.png" id="home-logo"></div>
+        <div><img src="/teamProject/resources/images/home-logo-white.png" id="home-logo"></div>
     </section>
     <section class="login-signUp">
         <div id="login-title">
@@ -22,8 +22,8 @@
             <p>당신의 취미도 BOND로 시작하세요.</p>
         </div>
         <div class="login-button">
-            <a href="/html/login.html" id="login">로그인</a>
-            <a href="/html/signUp.html" id="signUp">회원가입</a>
+            <a href="/member/login" id="login">로그인</a>
+            <a href="/member/signUp" id="signUp">회원가입</a>
         </div>
     </section>
 </body>
