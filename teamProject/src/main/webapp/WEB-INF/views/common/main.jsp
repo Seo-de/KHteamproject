@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인/회원가입 화면</title>
 
-    <link rel="stylesheet" href="/teamProject/resources/css/main.css">
+    <link rel="stylesheet" href="/resources/css/main.css">
 </head>
 
 <body>
     <section class="home-logo-area">
-        <div><img src="/teamProject/resources/images/home-logo-white.png" id="home-logo"></div>
+        <div><img src="/resources/images/home-logo-white.png" id="home-logo"></div>
     </section>
     <section class="login-signUp">
         <div id="login-title">

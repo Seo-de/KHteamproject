@@ -13,12 +13,12 @@ import javax.servlet.http.HttpSession;
 import kh.project.member.model.service.MemberService;
 import kh.project.member.model.vo.Member;
 
-@WebServlet("/member/login")
-public class LoginServlet extends HttpServlet{
+@WebServlet("/member/login22")
+public class Login22Servlet extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/views/member/login.jsp").forward(req, resp);
+		req.getRequestDispatcher("/WEB-INF/views/member/login22.jsp").forward(req, resp);
 	}
 	
 	@Override
@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet{
 			HttpSession session = req.getSession();
 			String path = null;
 			if(loginMember != null) { // 로그인 성공 시
-				path = "/member/login22"; // 메인페이지
+				path = "/"; // 메인페이지
 				
 				// 2) Session scope에 속성(값) 추가하기
 				session.setAttribute("loginMember", loginMember);

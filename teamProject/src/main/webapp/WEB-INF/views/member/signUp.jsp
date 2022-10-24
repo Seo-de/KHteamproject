@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>본드 | 회원가입</title>
-    <link rel="stylesheet" href="/teamProject/resources/css/signUp.css">
+    <link rel="stylesheet" href="/resources/css/signUp.css">
 </head>
 <body>
     <div class="top-logo">
-        <a href="#">
-            <img src="/teamProject/resources/images/home-logo.png" id="home-logo">
+        <a href="/main">
+            <img src="/resources/images/home-logo.png" id="home-logo">
         </a>
     </div>
     <main>
@@ -24,8 +24,8 @@
                 autocomplete="off" maxlegnth="20" required>
             </section>
             <section class="signUp-area">
-                <input type="text" name="memberPw" id="memberPw" placeholder="비밀번호" required maxlegnth="20">
-                <input type="text" name="memberPw" id="memberPw" placeholder="비밀번호 확인" required maxlegnth="20">
+                <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호" required maxlegnth="20">
+                <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호 확인" required maxlegnth="20">
             </section>
             <section class="signUp-area">
                 <input type="text" name="memberName" id="memberName" placeholder="이름" maxlegnth="0" required>

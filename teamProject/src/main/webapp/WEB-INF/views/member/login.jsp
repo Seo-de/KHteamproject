@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="top-logo">
-        <a href="#">
+        <a href="/main">
             <img src="/resources/images/home-logo.png" id="home-logo">
         </a>
     </div>

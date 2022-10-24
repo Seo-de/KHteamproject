@@ -44,7 +44,7 @@ public class SignUpervlet extends HttpServlet{
 			HttpSession session = req.getSession(); 
 			
 			if(result > 0) { // 성공
-				path="#"; 
+				path="/member/signUp22"; 
 				session.setAttribute("message", "회원 가입 성공!!!");
 			}else {
 				path="/member/signUp"; // 회원 가입 페이지(get)

@@ -26,7 +26,7 @@ public class MemberDAO {
 			prop = new Properties();
 			
 			String filePath 
-			= JDBCTemplate.class.getResource("/edu/kh/project/sql/member-sql.xml").getPath();
+			= JDBCTemplate.class.getResource("/kh/project/sql/member-sql.xml").getPath();
 			
 			prop.loadFromXML( new FileInputStream(filePath) );
 			
