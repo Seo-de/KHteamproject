@@ -33,7 +33,7 @@ main{
     margin-bottom: 50px;
 
 }
-.birth-title{
+.signUp-area>div{
     font-size: 20px;
 }
 .signUp-area{
@@ -46,6 +46,9 @@ main{
     padding-bottom: 8px;
     font-size: 30px;
     width: 100%;
+}
+.signUp-area #memberBirth{
+    color: #777;
 }
 .signUp-area input:focus{
     outline: none;
