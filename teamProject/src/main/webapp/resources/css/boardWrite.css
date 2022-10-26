@@ -37,6 +37,9 @@ main>.boardWrite>.title{
 .boardWrite-font i{
     margin: 10px;
 }
+.box{
+    height: 300px;
+}
 .content{
     height: 90%;
     border: 1px solid black;
@@ -49,9 +52,22 @@ textarea{
     padding: 0 35px;
     border: none;
 }
-
-
-
+.toolbar{
+    background-color: antiquewhite;
+    display: flex;
+    width: 100%;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+}
+ul{
+    font-size: 22px;
+}
+#photoInput{
+    
+}
 
 .boardWrite-btn{
     width: 100%;
@@ -59,7 +75,11 @@ textarea{
     font-size: 20px;
     background-color: #21c531;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
-    height: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+.boardWrite-btn:active{
+    transform: scale(0.95);
 }
