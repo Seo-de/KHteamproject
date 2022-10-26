@@ -10,17 +10,16 @@ main{
     height: 500px;
     border: 1px solid black;
 }
-main>.boardWrite-title{
+main>.boardWrite{
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    padding-top: 15px;
 }
-main>.boardWrite-title>.title{
+main>.boardWrite>.title{
     width: 90%;
     text-align: center;
 }
-.close-btn{
+.close-btn{ 
     border: none;
     font-size: 20px;
     background-color: white;
@@ -28,15 +27,28 @@ main>.boardWrite-title>.title{
     font-weight: bold;
 }
 .boardWrite-font{
-    background-color: #ddd;
-    font-size: 18px;
-    padding-left: 20px;
+    background-color: #21c5322e;
+    font-size: 16px;
+    padding: 0 20px;
     font-weight: lighter;
+    margin-bottom: 10px;
+    width: 100%;
 }
 .boardWrite-font i{
     margin: 10px;
 }
-
+.content{
+    height: 90%;
+    border: 1px solid black;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 0 35px;
+    border: none;
+}
 
 
 
@@ -49,4 +61,5 @@ main>.boardWrite-title>.title{
     border: none;
     border-radius: 5px;
     color: white;
+    height: 30px;
 }
