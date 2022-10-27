@@ -10,50 +10,54 @@
 </head>
 <body>
     <main>
-        <section class="boardWrite">
-            <h3 class="title">글쓰기</h3>
+        <section class="boardWrite-title">
+            <h3 class="title-area">글쓰기</h3>
             <button type="button" class="close-btn">X</button>
         </section>
         <section class="boardWrite">
-            <div class="boardWrite-font">
-                <i class="fa-solid fa-text-height"></i>
-                <i class="fa-solid fa-bold"></i>
-                <i class="fa-solid fa-italic"></i>
-                <i class="fa-solid fa-underline"></i>
-                <i class="fa-solid fa-strikethrough"></i>
-            </div>
-        </section>
-        <section class="boardWrite box">
-            <div class="boardWrite content">
-                <textarea name="content" id="content"cols="80" rows="10"
-                    placeholder="내용을 입력해주세요."></textarea>
-            </div>
-        </section>
-        <section class="boardWrite">
-            <div class="boardWrite toolbar">
-                <ul class="toolbarList">
-                    <li class="toolbarListItem">
-                        <input type="file" id="photoInput">
-                        <i class="fa-regular fa-image"></i>
-                    </li>
-                    <li class="toolbarListItem">
-                        <i class="fa-solid fa-check-to-slot"></i>
-                        <i class="fa-solid fa-square-poll-vertical"></i>
-                    </li>
-                    <li class="toolbarListItem">
-                        <i class="fa-solid fa-calculator"></i>
-                    </li>
-                    <li class="toolbarListItem">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <i class="fa-regular fa-calendar"></i>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="boardWrite">
-            <button type="submit" class="boardWrite-btn">
-                게시
-            </button>
+
+                <div class="boardWrite-font">
+                    <i class="fa-solid fa-text-height"></i>
+                    <i class="fa-solid fa-bold"></i>
+                    <i class="fa-solid fa-italic"></i>
+                    <i class="fa-solid fa-underline"></i>
+                    <i class="fa-solid fa-strikethrough"></i>
+                </div>
+
+            <section class="boardWrite box">
+                <div class="boardWrite content">
+                    <textarea name="content" id="content"cols="80" rows="10"
+                        placeholder="새로운 소식을 남겨보세요
+공개밴드에 남긴 글은 누구나 볼 수 있습니다."></textarea>
+                </div>
+            </section>
+            <section class="boardWrite">
+                <div class="boardWrite toolbar">
+                    <ul class="toolbarList">
+                        <li class="toolbarListItem">
+                            <input type="file" id="photoInput">
+                            <i class="fa-regular fa-image"></i><!-- 이미지첨부 -->
+                        </li>
+                        <li class="toolbarListItem">
+                            <i class="fa-solid fa-check-to-slot"></i><!-- 투표 -->
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </li>
+                        <li class="toolbarListItem">
+                            <i class="fa-solid fa-calculator"></i><!-- N빵 -->
+                        </li>
+                        <li class="toolbarListItem">
+                            <i class="fa-regular fa-calendar-days"></i><!-- 일정 -->
+                            <i class="fa-regular fa-calendar"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="boardWrite">
+                <button type="submit" class="boardWrite-btn">
+                    게시
+                </button>
+            </section>
+
         </section>
     </main>
 </body>
