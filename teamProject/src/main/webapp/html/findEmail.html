@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 찾기</title>
+    <link rel="stylesheet" href="../resources/css/findEmail.css">
 </head>
 <body>
     <div class="top-logo">
@@ -13,17 +14,17 @@
         </a>
     </div>
     <main>
-        <div class="findId-title">아이디 찾기</div>
-        <form action="#" method="post">
-            <section class="findIdbox">
+        <div class="findEmail-title">이메일 찾기</div>
+        <form action="/member/findEmail" method="post">
+            <section class="findEmailbox">
                 <input type="text" name="inputName" name="inputName"
                     placeholder="이름 입력" required>
             </section>
-            <section class="findIdbox">
+            <section class="findEmailbox">
                 <input type="text" name="inputTel" name="inputEmail"
                     placeholder="전화번호 입력" required>
             </section>
-            <button class="findIdbox findId-btn">로그인</button>
+            <button class="findEmailbox findEmail-btn">이메일 찾기</button>
             <!-- **** 입력받을 값들을 다시 생각해보자 **** -->
         </form>
     </main>
