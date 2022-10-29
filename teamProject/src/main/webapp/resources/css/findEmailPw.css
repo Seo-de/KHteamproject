@@ -46,7 +46,7 @@ main{
     outline: none;
     border-bottom: 1px solid #21c531;
 }
-.findPw-btn{
+.findPw-btn, .findEmail-btn{
     border: 0;
     cursor: pointer;
     width: 100%;
@@ -56,8 +56,14 @@ main{
     border-radius: 5px;
     background-color: #21c531;
     color: white;
-    margin-bottom: 20px;
+    margin: 40px 0 20px 0;
 }
-.findPw-btn:active{
+.findPw-btn:active, .findEmail-btn:active{
     transform: scale(0.95);
+}
+.noInput-{
+    padding-left: 30px;
+    margin-top: -10px;
+    color: #777;
+    font-size: 14px;
 }

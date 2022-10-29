@@ -5,66 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게시글 선택</title>
-    <link rel="stylesheet" href="../resources/css/postWrite.css">
+    <link rel="stylesheet" href="../resources/css/postClick.css">
     <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <section class="postWrite-title">
-            <h3 class="title-area">글쓰기</h3>
-            <button type="button" class="close-btn">
-                <i class="fa-solid fa-x"></i>
-            </button>
-        </section>
-        <form action="#" method="post" name="postWrite">
-            <section class="postWrite">
-                <div class="postWrite-font">
-                    <i class="fa-solid fa-text-height"></i>
-                    <i class="fa-solid fa-bold"></i>
-                    <i class="fa-solid fa-italic"></i>
-                    <i class="fa-solid fa-underline"></i>
-                    <i class="fa-solid fa-strikethrough"></i>
+        <form action="#" method="post" class="postClick">
+
+            <div class="postMemberAll">
+                <div class="postMember-img">
+                    <img src="../resources/images/user.png" class="memberImage" name="profile-img" id="profile-img">
                 </div>
-    
-                <section class="postWrite">
-                    <div class="postWrite-content">
-                        <textarea name="content" id="content"cols="80" rows="10"
-                            placeholder="새로운 소식을 남겨보세요
-공개밴드에 남긴 글은 누구나 볼 수 있습니다."></textarea>
+                <div class="postMember">
+                    <div class="postMember-name" name="member" id="memberName">회원이름</div>
+                    <div class="postDate-read">
+                        <span class="postDate" name="post" id="postDate">2022년 10월 29일 오후 11:42</span>
+                        <span class="read"  name="post" id="postView"> | ? 읽음</span>
                     </div>
-                    <div class="postWrite-toolbar">
-                        <ul class="toolbarList">
-                            <li class="toolbarListItem">
-                                <input type="file" id="photoInput">
-                                <i class="fa-regular fa-image"></i><!-- 이미지첨부 -->
-                            </li>
-                            <li class="toolbarListItem">
-                                <i class="fa-solid fa-check-to-slot"></i><!-- 투표 -->
-                            </li>
-                            <li class="toolbarListItem">
-                                <i class="fa-solid fa-divide"></i><!-- N빵 -->
-                            </li>
-                            <li class="toolbarListItem">
-                                <i class="fa-regular fa-calendar"></i><!-- 일정 -->
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-            <div class="postWrite-bottom">
-                <div class="setup-btn">
-                    <i class="fa-solid fa-toggle-off"></i><!-- 설정 -->
-                    <label class="write-setup" for="write-setup">댓글 사용</label>  
                 </div>
-                <div class="submit-btn">
-                    <button type="submit" class="postWrite-btn">
-                        게시
-                    </button>
+                <div class="post-report">
+                    <label for="post-report-icon" name="report" >
+                        <i class="fa-solid fa-user-slash"></i>
+                    </label>
+                    <div id="post-report-title">신고하기</div>
                 </div>
             </div>
-                
-        </form>
 
+            <div class="post-content" name="post" id="postContent">
+                <pre>작성한 글들이 나올거야
+과연 어떻게 나올까</pre>
+            </div>
+
+            <div class="show-reply" name="reply" id="replyCount">댓글 ?개</div>
+            
+            <div class="like-reply">
+                <span class="like">
+                    <span><i class="fa-regular fa-thumbs-up"></i></span>
+                    <span>좋아요</span>
+                </span>
+                <span class="reply">
+                    <span><i class="fa-regular fa-comment"></i></span>
+                    <span>댓글쓰기</span>
+                </span>
+            </div>
+            
+            <div class="reply-content" name="reply">
+                <div class="replyMember-img">
+                    <img src="../resources/images/user.png" class="memberImage" name="profile-img" id="profile-img">
+                </div>
+                <div class="replyMember">
+                    <div class="replyMember-name" name="member" id="memberName">회원이름</div>
+                    <div class="reply-content" name="reply" id="replyContent"></div>
+                    <div class="replyMember-read">
+                        <span class="replyDate" name="reply" id="replyDate">2022년 10월 29일 오후 11:42</span>
+                        <span class="replyLike-icon"><i class="fa-regular reply-fa-thumbs-up"></i></span>
+                        <span class="replyLike" name="replyLike" id="replyLike">?</span>
+                        <span class="replyWrite">답글쓰기</span>
+                    </div>
+                </div>
+                <label for="post-report" name="report" >
+                    <i class="fa-solid fa-user-slash"></i>
+                    신고하기</label>
+            </div>
+            <div class="reply-toolbar">
+                <span class="replyWrite-toolbar">
+                    <span class="replyMember-img">
+                        <img src="../resources/images/user.png" class="memberImage" name="profile-img" id="profile-img">
+                    </span>
+                    <span class="replyWrite">
+                        <input type="text" name="reply" id="replyContent" placeholder="댓글을 남겨주세요" maxlength="4000">
+                    </span>
+                </span>
+                <span class="send-btn">
+                    <button>보내기</button>
+                </span>
+            </div>
+        </form>
     </main>
 </body>
 </html>
