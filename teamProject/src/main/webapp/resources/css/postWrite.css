@@ -14,13 +14,13 @@ main{
     display: flex;
     flex-direction: column;
 }
-main>.boardWrite{
+main>.postWrite{
     margin: auto;
     width: 90%;
     height: 100%;
 }
 
-.boardWrite-title{
+.postWrite-title{
     position: relative;
     display: flex;
 }
@@ -41,7 +41,7 @@ main>.boardWrite{
     bottom: 10px;
 }
 
-.boardWrite-font{
+.postWrite-font{
     /*background-color: #21c5322e;*/
     font-size: 16px;
     padding: 0 20px;
@@ -49,10 +49,10 @@ main>.boardWrite{
     margin-bottom: 10px;
     width: 100%;
 }
-.boardWrite-font i{
+.postWrite-font i{
     margin: 10px;
 }
-.boardWrite-content{
+.postWrite-content{
     height: 330px;
     /*border: 1px solid red;*/
     margin-bottom: 13px;
@@ -69,7 +69,7 @@ textarea{
 textarea:focus{
     outline: none;
 }
-.boardWrite-toolbar{
+.postWrite-toolbar{
     display: flex;
     width: 100%;
     align-items: center;
@@ -88,13 +88,13 @@ ul i{
     margin: 10px;
     color: #777;
 }
-.boardWrite-bottom{
+.postWrite-bottom{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ddd;
     height: 100%;
 }
-.boardWrite-btn{
+.postWrite-btn{
     width: 100%;
     font-size: 20px;
     background-color: #21c531;
@@ -104,7 +104,7 @@ ul i{
     height: 40px;
     cursor: pointer;
 }
-.boardWrite-btn:active{
+.postWrite-btn:active{
     transform: scale(0.95);
 }
 .setup-btn{
@@ -122,7 +122,7 @@ ul i{
     margin-left: 20px;
     color: #777;
 }
-.boardWrite-btn{
+.postWrite-btn{
     font-size: 15px;
     width: 110px;
     margin-right: 10px;

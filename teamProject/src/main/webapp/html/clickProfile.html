@@ -5,40 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프로필 선택 시 보이는 팝업창</title>
-    <link rel="stylesheet" href="../resources/css/clickProfile.css">
+    <link rel="stylesheet" href="../resources/css/profile.css">
     <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p>사진 닉네임 가입일 생일 신고하기</p>
+
     <main>
-        
         <div class="profile">
-            <div class="close-btn">
-                <div class="profile-top">
-                    <button type="button" class="close-btn">
-                        <i class="fa-solid fa-x"></i>
-                    </button>
-                </div>
-            </div>
+            
+            <button type="button" class="close-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+                
 
             <form action="#" name="profile-area">
-                <section class="profile">
+                <section class="profile-area">
                     <div class="profile-image">
-                        <i class="fa-solid fa-user" name="profile-image"></i>
+                        <img src="../resources/images/user.png" class="image" alt="">
                     </div>
             
-                    <div class="memberName" name="memberName">회원이름</div>
+                    <h3 class="memberName" name="memberName">회원이름</h3>
+                    <section class="member">
+                        <div class="leader-yn">
+                            <div class="profile-member">멤버</div>
+                        </div>
+                            <div class="join-date">since 2022년 10월 27일</div>
+
+                    </section>
             
-                    <div>
-                        <span class="profile-member">멤버</span>
-                        <span class="signUp-date">since 2022년 10월 27일</span>
-            
+                    <div class="birth">
+                        <div class="birth-title">생일 : </div>
+                        <div class="memberBirth">
+                           2022년 10월 29일
+                        </div>
+
                     </div>
-        
-                    <div class="memberBirth">
-                        생일
-                    </div>
-                    <div>
+                    <div class="report">
                         <i class="fa-solid fa-user-slash"></i>  
                         신고하기
                     </div>
