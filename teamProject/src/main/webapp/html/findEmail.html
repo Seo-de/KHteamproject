@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
-    <link rel="stylesheet" href="../resources/css/findEmail.css">
+    <title>본드 | 이메일 찾기</title>
+    <link rel="shortcut icon" href="../resources/images/title-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../resources/css/findEmailPw.css">
 </head>
 <body>
     <div class="top-logo">
@@ -14,18 +15,18 @@
         </a>
     </div>
     <main>
-        <div class="findEmail-title">이메일 찾기</div>
-        <form action="/member/findEmail" method="post">
-            <section class="findEmailbox">
-                <input type="text" name="inputName" name="inputName"
-                    placeholder="이름 입력" required>
+        <div class="find-title findEmail">이메일 찾기</div>
+        <form action="#" method="post">
+            <section class="inputbox">
+                <input type="text" name="inputEmail" placeholder="이름 입력" required
+                    autocomplete="off">
             </section>
-            <section class="findEmailbox">
-                <input type="text" name="inputTel" name="inputEmail"
-                    placeholder="전화번호 입력" required>
+            <section class="inputbox">
+                <input type="password" name="inputPw" placeholder="전화번호 입력" required
+                    autocomplete="off">
             </section>
-            <button class="findEmailbox findEmail-btn">이메일 찾기</button>
-            <!-- **** 입력받을 값들을 다시 생각해보자 **** -->
+            <button class="inputbox findEmail-btn">찾기</button>
+
         </form>
     </main>
 </body>

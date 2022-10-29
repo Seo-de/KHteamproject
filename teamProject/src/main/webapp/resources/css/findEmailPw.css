@@ -24,38 +24,40 @@ main{
     width: 100px;
     padding-bottom: 20px;
 }
-.findEmail-title{
+.find-title{
     font-size: 48px;
     text-align: center;
     width: 100%;
     margin-bottom: 50px;
 
 }
-.findEmailbox input{
+.inputbox{
+    margin-bottom: 20px;
+}
+.inputbox input{
     border: none;
     margin: 20px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
     font-size: 30px;
     width: 100%;
+    padding: 0 0 8px 15px;
 }
-.findEmailbox input:focus{
+.inputbox input:focus{
     outline: none;
     border-bottom: 1px solid #21c531;
 }
-.findEmail-btn{
+.findPw-btn{
     border: 0;
     cursor: pointer;
     width: 100%;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
     display: block;
     padding: 15px;
     border-radius: 5px;
     background-color: #21c531;
     color: white;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.findEmail-btn:active{
+.findPw-btn:active{
     transform: scale(0.95);
 }
