@@ -6,8 +6,9 @@
 main{
     width: 80%; 
     height: 550px;
+    min-width: 345px;
     max-width: 600px;
-    max-height: 600px;
+    max-height: 90vh;
     border: 1px solid black;
     margin: auto;
     margin-top: 130px;
@@ -25,6 +26,7 @@ main{
 .postMember-img{
     border-radius: 50%;
     width: 38px;
+    min-width: 38px;
     height: 38px;
     margin-right: 20px;
     background-color: white;
@@ -36,6 +38,7 @@ main{
 }
 .postMember{
     width: 70%;
+    min-width: 213px;
     margin-right: 20px;
     padding-top: 13px;
 }
@@ -53,8 +56,9 @@ main{
     text-align: center;
     font-size: 13px;
     align-items: center;
-    margin-left: 30px;
+    margin-left: -10px;
     cursor: pointer;
+    min-width: 48px;
 }
 .post-report:hover{
     color: red;
@@ -69,6 +73,16 @@ main{
     line-height: 23px;
 }
 
+.replyMember-img{
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+}
+.replyMember-img>#profile-img{
+    width: 100%;
+    height: 100%;
+}
+
 .show-reply{
     border-bottom: 1px solid greenyellow;
     padding: 25px 40px 16px;
@@ -81,11 +95,17 @@ main{
     padding: 16px 40px 16px;
 }
 .like-reply>span{
-    padding: 50px;
     cursor: pointer;
-    width: 50%;
+}
+.like-reply>.likeEmpty{
+    padding: 50px;
 }
 .like-reply>span:hover{
     color: #21c531;
     font-weight: 800;
+}
+
+.reply-toolbar{
+    padding: 25px;
+    display: flex;
 }

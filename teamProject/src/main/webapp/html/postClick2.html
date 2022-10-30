@@ -41,24 +41,40 @@
             <div class="like-reply">
                 <span class="like">
                     <span><i class="fa-regular fa-thumbs-up"></i></span>
-                    <span class="likeEmpty"></span>
                     <span>좋아요</span>
                 </span>
                 <span class="reply">
                     <span><i class="fa-regular fa-comment"></i></span>
-                    <span>댓글쓰기</span>
+                    <span>댓글쓰기+댓글</span>
                 </span>
             </div>
             
-
+            <div class="reply-content" name="reply">
+                <div class="replyMember-img">
+                    <img src="../resources/images/user.png" class="memberImage" name="profile-img" id="profile-img">
+                </div>
+                <div class="replyMember">
+                    <div class="replyMember-name" name="member" id="memberName">회원이름</div>
+                    <div class="reply-content" name="reply" id="replyContent"></div>
+                    <div class="replyMember-read">
+                        <span class="replyDate" name="reply" id="replyDate">2022년 10월 29일 오후 11:42</span>
+                        <span class="replyLike-icon"><i class="fa-regular reply-fa-thumbs-up"></i></span>
+                        <span class="replyLike" name="replyLike" id="replyLike">?</span>
+                        <span class="replyWrite">답글쓰기</span>
+                    </div>
+                </div>
+                <label for="post-report" name="report" >
+                    <i class="fa-solid fa-user-slash"></i>
+                    신고하기</label>
+            </div>
             <div class="reply-toolbar">
                 <span class="replyWrite-toolbar">
-                    <div class="replyMember-img">
+                    <span class="replyMember-img">
                         <img src="../resources/images/user.png" class="memberImage" name="profile-img" id="profile-img">
-                    </div>
-                    <div class="replyWrite">
+                    </span>
+                    <span class="replyWrite">
                         <input type="text" name="reply" id="replyContent" placeholder="댓글을 남겨주세요" maxlength="4000">
-                    </div>
+                    </span>
                 </span>
                 <span class="send-btn">
                     <button>보내기</button>
