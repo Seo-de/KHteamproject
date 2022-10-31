@@ -21,9 +21,9 @@ public class Member {
 	private String memberTel;
 	private String memberBirth;
 	private String profileImage;
-	private String enrollDate;
+	private String signUpDate;
 	private String memberDeleteFlag;
-	private int authority;
+	private String authority;
 	
 
 }

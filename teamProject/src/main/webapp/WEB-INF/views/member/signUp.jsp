@@ -35,6 +35,11 @@
                 <div class="birth-title">생년월일</div>
                 <input type="date" name="memberBirth" id="memberBirth" required>
             </section>
+            <section class="signUp-area">
+                <div class="memberTel"> 전화번호 (- 빼고 입력해주세요) </div>
+                <input type="text" name="memberTel" id="memberTel" placeholder="전화번호" maxlength="11"
+                required autocomplete="off">
+            </section>
             <button class="signUp-btn">회원가입</button>
         </form>
     </main>

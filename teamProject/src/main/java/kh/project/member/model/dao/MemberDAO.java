@@ -64,8 +64,8 @@ public class MemberDAO {
 				loginMember.setMemberTel(rs.getString("MEMBER_TEL"));
 				loginMember.setMemberBirth(rs.getString("MEMBER_BIRTH"));
 				loginMember.setProfileImage(rs.getString("PROFILE_IMG"));
-				loginMember.setAuthority(rs.getInt("AUTHORITY"));
-				loginMember.setEnrollDate(rs.getString("ENROLL_DATE"));
+				loginMember.setAuthority(rs.getString("AUTHORITY"));
+				loginMember.setSignUpDate(rs.getString("SIGNUP_DATE"));
 			}
 			
 		} finally {
@@ -94,6 +94,7 @@ public class MemberDAO {
 			pstmt.setString(2, member.getMemberPw());
 			pstmt.setString(3, member.getMemberName());
 			pstmt.setString(4, member.getMemberBirth());
+			pstmt.setString(5, member.getMemberTel());
 			
 			result=pstmt.executeUpdate();
 			

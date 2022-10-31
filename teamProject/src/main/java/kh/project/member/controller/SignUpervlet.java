@@ -28,12 +28,14 @@ public class SignUpervlet extends HttpServlet{
 		String memberPw = req.getParameter("memberPw");
 		String memberName = req.getParameter("memberName");
 		String memberBirth = req.getParameter("memberBirth");
+		String memberTel = req.getParameter("memberTel");
 		
 		Member member = new Member();
 		member.setMemberEmail(memberEmail);
 		member.setMemberPw(memberPw);
 		member.setMemberName(memberName);
 		member.setMemberBirth(memberBirth);
+		member.setMemberTel(memberTel);
 		
 		try {
 			MemberService service = new MemberService();

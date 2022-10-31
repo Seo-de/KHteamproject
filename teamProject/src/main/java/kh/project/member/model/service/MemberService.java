@@ -8,7 +8,7 @@ import java.sql.Connection;
 
 public class MemberService {
 	
-	MemberDAO dao = new MemberDAO();
+	private MemberDAO dao = new MemberDAO();
 
 	/** 로그인 서비스
 	 * @param member
