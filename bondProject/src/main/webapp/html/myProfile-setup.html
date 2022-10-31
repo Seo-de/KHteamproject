@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 프로필 설정</title>
+    <link rel="stylesheet" href="../resources/css/profile.css">
+    <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main>
+        <div class="profile">
+            <button type="button" class="myProfile close-btn ">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="myProfile-title">회원님의 프로필 설정</div>
+            
+            <form action="#" name="myProfile-area">
+                <section class="myProfile-area">
+                    <div class="myProfile-image">
+                        <img src="../resources/images/user.png" class="image" alt="">
+                        <div class="update-profile-image">
+                            <input type="file" accept="image/*" id="inputImage">
+                            <label for="inputImage"><i class="fa-solid fa-camera"></i></label>
+                        </div>
+                    </div>
+                    <div class="update-memberName">
+                        <input type="text" placeholder="이름" class="memberName" id="memberName"
+                            name="memberName" autocomplete="off">
+                        <button type="reset" class="reset-btn">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </div>
+
+                </section>
+
+                    <button class="submit-btn">확인</button>
+            </form>
+        </div>
+
+        
+
+    </main>
+</body>
+</html>
+            

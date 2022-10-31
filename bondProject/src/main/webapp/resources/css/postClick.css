@@ -1,0 +1,165 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'nanumsquare', serif;
+}
+main{
+    width: 80%; 
+    height: 550px;
+    min-width: 369px;
+    max-width: 600px;
+    max-height: 90vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postMemberAll{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+}
+.postMember-img{
+    border-radius: 50%;
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+    margin-right: 20px;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.postMember-img>#profile-img{
+    width: 100%;  height: 100%;
+}
+.postMember{
+    width: 70%;
+    min-width: 213px;
+    margin-right: 20px;
+    padding-top: 13px;
+}
+.postMember>#memberName{
+    font-weight: bold;
+    margin-bottom: 3px;
+    letter-spacing: 2px;
+}
+.postMember>.postDate-read{
+    font-size: 12px;
+    color: #777;
+}
+.post-report{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    align-items: center;
+    cursor: pointer;
+    min-width: 48px;
+    width: 20%;
+}
+.post-report:hover{
+    color: red;
+}
+.fa-user-slash{
+    cursor: pointer;
+}
+
+.post-content{
+    padding: 25px 40px 16px;
+    line-height: 23px;
+}
+
+.replyMember-img{
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    margin-left: 5px;
+}
+.replyMember-img>#profile-img{
+
+    height: 100%;
+}
+
+.show-reply{
+    border-bottom: 1px solid greenyellow;
+    padding: 25px 40px 16px;
+    font-size: 13px;
+}
+
+.like-reply{
+    border: 1px solid #21c531;
+    border-radius: 5px;
+    text-align: center;
+    padding: 16px 40px 16px;
+    display: flex;
+}
+.like-reply>div{
+    width: 50%;
+
+}
+.like-reply>.likeEmpty{
+    padding: 50px;
+}
+.like-reply>div:hover{
+    color: #21c531;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.reply-toolbar{
+    padding: 25px;
+    display: flex;
+    height: 32px;
+}
+.replyWrite-toolbar{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-items: center;
+    height: 30px;
+}
+.replyWrite-toolbar>.replyMember-img{
+    margin-right: 10px;
+}
+.replyWrite{
+    width: 100%;
+}
+.replyWrite>#replyContent{
+    width: 100%;
+    border: none;
+}
+.replyWrite>#replyContent:focus{
+    outline: none;
+}
+
+.send-btn{
+    height: 32px;
+    width: 15%;
+    border-radius: 40%;
+    
+}
+.send-btn>button{
+    background-color: #21c531;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 18px;
+    width: 90%;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+.reply-content-area{
+    border: 3px solid blue;
+    display: flex;
+}
+.replyMember-img{
+    margin-right: 10px;
+}

@@ -1,0 +1,195 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'nanumsquare', serif;
+}
+body{
+    background-color: rgba(128, 128, 128, 0.135);
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    z-index: 2000;
+}
+/* clickProfile */
+.close-btn{
+    padding: 10px 10px 0 0;
+    border: none;
+    font-size: 21px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    position: absolute;
+    margin-left: 140px;
+}
+.profile{
+    background-color: white;
+    width: 320px; height: 412px;
+    text-align: center;
+    display: block;
+}
+.profile-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-image{
+    border: 3px solid greenyellow;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/*  clickProfile 설정 */
+.profile-area>.memberName{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+#inputImage{
+    display: none;
+    cursor: pointer;
+}
+.member{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.leader-yn{
+    font-size: 12px;
+    padding-top: 4px;
+    border-radius: 45%;
+    width: 36px;
+    height: 20px;
+    margin-right: 8px;
+    background-color: #21c531;
+    color: white;
+}
+.join-date{
+    font-size: 13px;
+}
+.birth{
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.birth-title{
+    margin-right: 5px;
+}
+.report{
+    font-size: 13px;
+    cursor: pointer;
+}
+.report:hover{
+    color: red;
+}
+
+
+/* myProfile설정 */
+.myProfile-title{
+    margin-top: 25px;
+    font-size: 18px;
+}
+.myProfile{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.myProfile-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.myProfile-image{
+    border: 3px solid greenyellow;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    margin: 30px 0 25px 0;
+}
+.myProfile-area>.profile-image{
+    margin-bottom: 20px;
+}
+.update-profile-image{
+    border: 4px solid white;
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5000;
+    margin-top: -75px;
+    margin-left: 120px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+.update-profile-image:active{
+    background-color: #21c531;
+    transform: scale(0.95);
+}
+.fa-camera{
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    margin-top: 13px;
+}
+
+
+.update-memberName{
+    display: flex;
+    width: 60%;
+    border-bottom: 1px solid #777;
+    margin-bottom: 12px;
+}
+.memberName:focus{
+    outline: none;
+    border-bottom: 1px solid #21c531;
+    
+}
+.update-memberName>.memberName{
+    font-size: 24px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    border: none;
+}
+.reset-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    padding-top: 5px;
+    margin-left: 10px;
+    color: #777;
+    cursor: pointer;
+}
+.reset-btn:hover{
+    color: red;
+}
+
+.submit-btn{
+    width: 64%;
+    height: 35px;
+    background-color: #21c531;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit-btn:active{
+    transform: scale(0.95);
+}
