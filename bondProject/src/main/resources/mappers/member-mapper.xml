@@ -19,11 +19,19 @@
    </resultMap>
    
    	<select id="login" parameterType="String" resultMap="member_rm">
-		SELECT MEMBER_NO, MEMBER_EMAIL,  MEMBER_PW, MEMBER_NAME, MEMBER_BIRTH,
-			MEMBER_TEL, PROFILE_IMG, AUTHORITY, 
-			TO_CHAR(SIGNUP_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') AS SIGNUP_DATE 
-		FROM "MEMBER"
-		WHERE MEMBER_STATUS = '0'
-		AND MEMBER_EMAIL = #{memberEmail}
-	</select>
+			SELECT MEMBER_NO, MEMBER_EMAIL,  MEMBER_PW, MEMBER_NAME, MEMBER_BIRTH,
+				MEMBER_TEL, PROFILE_IMG, AUTHORITY, 
+				TO_CHAR(SIGNUP_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') AS SIGNUP_DATE 
+			FROM "MEMBER"
+			WHERE MEMBER_STATUS = '0'
+			AND MEMBER_EMAIL = #{memberEmail}
+			<!-- AND MEMBER_PW = #{memberPw} -->
+		</select>
+	
+		<insert id="signUp" parameterType="Member">
+			INSERT INTO "MEMBER"
+			VALUES(SEQ_MEMBER_NO.NEXTVAL, 
+				#{memberEmail}, #{memberPw}, #{memberName}, #{memberBirth}, #{memberTel},
+				DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT )
+		</insert>
 </mapper>

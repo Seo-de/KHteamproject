@@ -2,6 +2,7 @@ package edu.kh.project.member.model.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import edu.kh.project.member.model.dao.MemberDAO;
 import edu.kh.project.member.model.vo.Member;
@@ -20,19 +21,22 @@ public class MemberServiceImpl implements MemberService{
 		
 		Member loginMember = dao.login(inputMember.getMemberEmail());
 		
-		if(loginMember != null) {
-			loginMember.setMemberPw(null);
-		}else {
-			loginMember=null;
-		}
+//		if(loginMember != null) {
+//			loginMember.setMemberPw(null);
+//		}else {
+//			loginMember=null;
+//		}
 		
 		return loginMember;
 	}
 
+	@Transactional(rollbackFor = Exception.class)
 	@Override
-	public Member signUp(Member inputMember) {
-		// TODO Auto-generated method stub
-		return null;
+	public int signUp(Member inputMember) {
+		
+		int result = dao.signUp(inputMember);
+		
+		return result;
 	}
 
 }

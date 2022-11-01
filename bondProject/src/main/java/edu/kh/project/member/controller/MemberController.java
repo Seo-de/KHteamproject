@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.project.member.model.service.MemberService;
 import edu.kh.project.member.model.vo.Member;
 
 @Controller
+@SessionAttributes({"loginMember", "message"})
 public class MemberController {
 	
 	@Autowired
@@ -32,7 +34,9 @@ public class MemberController {
 		String path=null;
 		
 		if(loginMember != null) {
-			path="/member/login22";
+			path="member/login22";
+			
+			model.addAttribute("loginMember", loginMember);
 			
 			Cookie cookie = new Cookie("saveId", loginMember.getMemberEmail());
 			if(saveId != null) {
@@ -54,4 +58,35 @@ public class MemberController {
 	public String login() {
 		return "member/login";
 	}
+	
+	@GetMapping("/member/signUp")
+	public String signUp() {
+		return "member/signUp";
+	}
+	
+	@PostMapping("/member/signUp")
+	public String signUp(Member inputMember, RedirectAttributes ra,
+					@RequestHeader("referer") String referer) {
+		
+		int result = service.signUp(inputMember);
+		
+		String path = null;
+		String message = null;
+		
+		if(result>0) {
+			path="/member/signUp22";
+			message = "회원가입 성공";
+		}else {
+			path="referer";
+			message="회원가입 실패";
+			
+			inputMember.setMemberPw(null);
+			ra.addFlashAttribute("tempMember", inputMember);
+			
+		}
+		ra.addFlashAttribute("message",message);
+		return "redirect:"+path;
+	}
+	
+	
 }
