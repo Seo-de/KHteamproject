@@ -1,0 +1,27 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'nanumsquare', serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.memberMana-area{
+    width: 632px;
+    height: 310px;
+    border: 1px solid black;
+}
+
+.member-Toptitle{
+    display: inline-block;
+}
+.member-top>.member-total{
+    font-size: 18px;
+}
+.member-top>.member-invite{
+    border: 1px solid #21c531;
+    width: 114px;
+    height: 34px;
+}
+
