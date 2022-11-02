@@ -26,7 +26,7 @@
             </section>
             <section class="signUp-area">
                 <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호" required maxlegnth="20">
-                <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호 확인" required maxlegnth="20">
+                <input type="password" name="memberPwConfirm" id="memberPwConfirm" placeholder="비밀번호 확인" required maxlegnth="20">
             </section>
             <section class="signUp-area">
                 <input type="text" name="memberName" id="memberName" placeholder="이름" maxlegnth="0" required>

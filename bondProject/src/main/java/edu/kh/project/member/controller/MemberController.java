@@ -74,7 +74,7 @@ public class MemberController {
 		String message = null;
 		
 		if(result>0) {
-			path="/member/signUp22";
+			path="/member/signUpOk";
 			message = "회원가입 성공";
 		}else {
 			path="referer";
@@ -88,5 +88,8 @@ public class MemberController {
 		return "redirect:"+path;
 	}
 	
-	
+	@GetMapping("/member/signUpOk")
+	public String signUpOk() {
+		return "member/signUpOk";
+	}
 }

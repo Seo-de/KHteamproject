@@ -14,7 +14,9 @@ body{
     padding: 20px;
 }
 main{
-    width: 60vh;
+    width: 60%;
+    min-width: 500px;
+    max-width: 600px;
 }
 .top-logo{
     border-bottom: solid 1px #ddd;
@@ -68,4 +70,44 @@ main{
 }
 .signUp-btn:active{
     transform: scale(0.95);
+}
+
+
+.con-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 21px;
+    min-width: 465px;
+}
+.con-subtitle{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.con-subtitle>h3{
+    margin: 15px 0;
+}
+.move{
+    display: flex;
+    justify-content: center;
+}
+.move div{
+    border: 1px solid #21c531;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 3px;
+    padding-top: 20px;
+    cursor: pointer;
+    color: #21c531;
+}
+.move a{
+    text-decoration: none;
+
+}
+.move div:hover{
+    background-color: #21c531;
+    color: white;
 }
