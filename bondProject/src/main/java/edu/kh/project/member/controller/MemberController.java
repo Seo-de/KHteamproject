@@ -34,7 +34,7 @@ public class MemberController {
 		String path=null;
 		
 		if(loginMember != null) {
-			path="member/login22";
+			path="/login22";
 			
 			model.addAttribute("loginMember", loginMember);
 			
@@ -58,12 +58,12 @@ public class MemberController {
 	public String login() {
 		return "member/login";
 	}
-	
+
 	@GetMapping("/member/signUp")
 	public String signUp() {
 		return "member/signUp";
 	}
-	
+
 	@PostMapping("/member/signUp")
 	public String signUp(Member inputMember, RedirectAttributes ra,
 					@RequestHeader("referer") String referer) {
