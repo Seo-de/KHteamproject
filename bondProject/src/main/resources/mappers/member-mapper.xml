@@ -19,7 +19,7 @@
    </resultMap>
    
    	<select id="login" parameterType="String" resultMap="member_rm">
-			SELECT MEMBER_NO, MEMBER_EMAIL,  MEMBER_PW, MEMBER_NAME, MEMBER_BIRTH,
+			SELECT MEMBER_NO, MEMBER_EMAIL, <!--  MEMBER_PW, --> MEMBER_NAME, MEMBER_BIRTH,
 				MEMBER_TEL, PROFILE_IMG, AUTHORITY, 
 				TO_CHAR(SIGNUP_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') AS SIGNUP_DATE 
 			FROM "MEMBER"
