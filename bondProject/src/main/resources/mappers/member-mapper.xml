@@ -12,7 +12,7 @@
 			<result property="memberBirth" column="MEMBER_BIRTH" />			
 			<result property="memberAddress" column="MEMBER_ADDRESS" />
 			<result property="profileImage" column="PROFILE_IMG" />
-      <result property="signUPdate" column="SiGNUP_DATE" />
+      <result property="signUpDate" column="SiGNUP_DATE" />
       <result property="memberStatus" column="MEMBER_STATUS" />
       <result property="authority" column="AUTHORITY" />
    
