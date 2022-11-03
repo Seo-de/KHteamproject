@@ -117,14 +117,18 @@ main{
 
 .signUp-area>.coner{
     margin-left: 40px;
-    font-size: 16px;
+    font-size: 14px;
 
 }
 .confirm{
     color: #21c531;
-    font-size: 16px;
+    font-size: 14px;
 }
 .error{
     color: red;
-    font-size: 16px;
+    font-size: 14px;
+}
+.no{
+    color: black;
+    font-size: 14px;
 }

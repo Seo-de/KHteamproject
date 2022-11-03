@@ -17,28 +17,25 @@
         <div class="signUp-title">회원 가입</div>
         <form action="#" method="post">
             <section class="signUp-area">
-                <input type="text" name="memberEmail" id="memberEmail" placeholder="이메일"
-                    required autocomplete="off">
-                <div id="emailConfirm" class="coner">결과</div>
+                <input type="text" name="memberEmail" id="memberEmail" placeholder="이메일" autocomplete="off">
+                <div id="emailConfirm" class="coner"></div>
             </section>
             <section class="signUp-area">
                 <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호">
-                <div id="pwConfirm" class="coner"></div>
+                <div id="pwConfirm" class="coner">영어, 숫자, 특수문자(! @ ~ ? `)를 포함해 최소 8자리이상 사용해주세요</div>
                 <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호 확인">
                 <div id="pwConfirm2" class="coner"></div>
             </section>
             <section class="signUp-area">
-                <input type="text" name="memberName" id="memberName" placeholder="이름"
-                    required autocomplete="off">
+                <input type="text" name="memberName" id="memberName" placeholder="이름" autocomplete="off">
             </section>
             <section class="signUp-area">
                 <div class="birth-title">생년월일</div>
-                <input type="date" name="memberBirth" id="memberBirth"  required autocomplete="off">
+                <input type="date" name="memberBirth" id="memberBirth" autocomplete="off">
             </section>
             <section class="signUp-area">
                 <div class="memberTel"> 전화번호 (- 빼고 입력해주세요) </div>
-                <input type="text" name="memberTel" id="memberTel" placeholder="전화번호" maxlength="11"
-                required autocomplete="off">
+                <input type="text" name="memberTel" id="memberTel" placeholder="전화번호" maxlength="11" autocomplete="off">
             </section>
             <button class="signUp-btn">회원가입</button>
         </form>

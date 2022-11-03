@@ -46,6 +46,7 @@ if(signUpFrm != null){
             event.preventDefault();
             return;
         }
+        console.log(event);
     });
 }
 function alertAndFocus(input, src){
@@ -54,23 +55,35 @@ function alertAndFocus(input, src){
     input.value="";
 }
 
-document.getElementById("memberEmail").addEventListener("keyup", function(){
+// document.getElementById("memberEmail").addEventListener("keyup", function(){
 
-    const regEx = /^[a-zA-Z0-9]{1,15}$/;
+//     const regEx = /^[a-zA-Z0-9]{1,15}$/;
 
-    const emailConfirm = document.getElementById("emailConfirm");
+//     const emailConfirm = document.getElementById("emailConfirm");
 
-    if(regEx.test(this.value)){
-        emailConfirm.innerText="유효한 이메일 형식입니다.";
-        emailConfirm.classList.add("confirm");
-        emailConfirm.classList.remove("error");
-    }else{
-        emailConfirm.innerText="잘못된 이메일 형식입니다.";
-        emailConfirm.classList.add("error");
-        emailConfirm.classList.remove("confirm");
-    }
+//     if(this.value.trim().length == 0){
+//         emailConfirm.innerText="이메일을 입력해주세요.";
+//         emailConfirm.classList.add("no");
+//         emailConfirm.classList.remove("error");
+//         emailConfirm.classList.remove("confirm");
 
-})
+//         return;
+//     }else{
+//         if(regEx.test(this.value)){
+//             emailConfirm.innerText="유효한 이메일 형식입니다.";
+//             emailConfirm.classList.add("confirm");
+//             emailConfirm.classList.remove("error");
+//             return;
+//         }else{
+//             emailConfirm.innerText="잘못된 이메일 형식입니다.";
+//             emailConfirm.classList.add("error");
+//             emailConfirm.classList.remove("confirm");
+//             return;
+//         }
+
+//     }
+
+// })
 
 
 
