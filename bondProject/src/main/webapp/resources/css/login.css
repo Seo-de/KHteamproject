@@ -12,7 +12,7 @@ body{
     padding: 20px;
 }
 main{
-    width: 60vh;
+    width: 70vh;
 }
 .top-logo{
     border-bottom: solid 1px #ddd;
@@ -71,7 +71,7 @@ main label{
     color: #777;
 }
 main .text-area{
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 10px;
 }
 main .text-area a{

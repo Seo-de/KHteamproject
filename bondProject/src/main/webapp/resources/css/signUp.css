@@ -43,7 +43,7 @@ main{
 }
 .signUp-area input{
     border: none;
-    margin: 20px;
+    margin: 25px 20px 10px 20px;
     border-bottom: 1px solid #ddd;
     padding: 0 0 8px 15px;
     font-size: 30px;
@@ -75,10 +75,11 @@ main{
 
 .con-title{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 60px;
     font-size: 21px;
     min-width: 465px;
+
 }
 .con-subtitle{
     text-align: center;
@@ -110,4 +111,20 @@ main{
 .move div:hover{
     background-color: #21c531;
     color: white;
+}
+
+
+
+.signUp-area>.coner{
+    margin-left: 40px;
+    font-size: 16px;
+
+}
+.confirm{
+    color: #21c531;
+    font-size: 16px;
+}
+.error{
+    color: red;
+    font-size: 16px;
 }

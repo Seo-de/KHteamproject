@@ -19,13 +19,13 @@
     </div>
     <main>
         <div class="login-title">로그인</div>
-        <form action="/member/login" method="post">
+        <form action="/member/login" method="post" id="loginFrm">
             <section class="inputbox">
-                <input type="text" name="memberEmail" placeholder="이메일 입력" required
+                <input type="text" name="memberEmail" id="memberEmail" placeholder="이메일 입력" required
                 autocomplete="off" value="${cookie.saveId.value}">
             </section>
             <section class="inputbox">
-                <input type="password" name="memberPw" placeholder="비밀번호 입력" required>
+                <input type="password" name="memberPw" id="password"  placeholder="비밀번호 입력" required>
             </section>
             <button class="inputbox login-btn">로그인</button>
             <section class="saveId-area">
@@ -54,5 +54,6 @@
 
         <c:remove var="message" scope="session"/>
      </c:if>
+     <script src="/resources/js/member/login.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
     </div>
     <main>
         <div class="signUp-title">회원 가입</div>
-        <form action="/member/signUp" method="post">
+        <form action="/member/signUp" method="post" id="signUpFrm">
             <section class="signUp-area">
                 <input type="text" name="memberEmail" id="memberEmail" placeholder="이메일"
                 autocomplete="off" maxlegnth="20" required>
@@ -44,5 +44,6 @@
         </form>
     </main>
         
+    <script src="/resources/js/member/signUp.js"></script> 
 </body>
 </html>

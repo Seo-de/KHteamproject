@@ -74,7 +74,7 @@ public class MemberController {
 		String message = null;
 		
 		if(result>0) {
-			path="/member/signUpOk";
+			path="/commom/main";
 			message = "회원가입 성공";
 		}else {
 			path="referer";
