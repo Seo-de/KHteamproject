@@ -28,7 +28,7 @@ main>.postWrite{
     width: 80%;
     font-size: 19x;
     text-align: center;
-    padding: 15px 0px 15px 120px;
+    padding: 30px 0px 15px 120px;
 }
 .close-btn{ 
     border: none;
@@ -41,19 +41,9 @@ main>.postWrite{
     bottom: 10px;
 }
 
-.postWrite-font{
-    /*background-color: #21c5322e;*/
-    font-size: 16px;
-    padding: 0 20px;
-    font-weight: lighter;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.postWrite-font i{
-    margin: 10px;
-}
 .postWrite-content{
-    height: 330px;
+    min-height: 330px;
+    max-height: 500px;
     /*border: 1px solid red;*/
     margin-bottom: 13px;
 }
@@ -75,19 +65,7 @@ textarea:focus{
     align-items: center;
     margin-bottom: 10px;
 }
-li{
-    list-style: none;
-    display: inline;
-    margin-left:10px;
-}
-#photoInput{display: none;}
 
-ul i{
-    font-size: 22px;
-    cursor: pointer;
-    margin: 10px;
-    color: #777;
-}
 .postWrite-bottom{
     display: flex;
     justify-content: space-between;

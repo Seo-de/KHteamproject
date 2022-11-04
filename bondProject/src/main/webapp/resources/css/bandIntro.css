@@ -1,0 +1,15 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'nanumsquare', serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.band-intro{
+    min-width: 632px;
+    min-height: 310px;
+    max-height: 90vh;
+    border: 1px solid black;
+}

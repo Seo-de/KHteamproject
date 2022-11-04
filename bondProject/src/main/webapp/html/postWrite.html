@@ -18,52 +18,30 @@
                 <i class="fa-solid fa-x"></i>
             </button>
         </section>
-        <section class="postWrite">
-
-            <div class="postWrite-font">
-                <i class="fa-solid fa-text-height"></i>
-                <i class="fa-solid fa-bold"></i>
-                <i class="fa-solid fa-italic"></i>
-                <i class="fa-solid fa-underline"></i>
-                <i class="fa-solid fa-strikethrough"></i>
-            </div>
-
+        <form action="#" id="postWriteFrm">
             <section class="postWrite">
-                <div class="postWrite-content">
-                    <textarea name="content" id="content" cols="80" rows="10" placeholder="새로운 소식을 남겨보세요
+                <section class="postWrite">
+                    <div class="postWrite-content">
+                        <textarea name="content" id="content" placeholder="새로운 소식을 남겨보세요.
 공개밴드에 남긴 글은 누구나 볼 수 있습니다."></textarea>
-                </div>
-                <div class="postWrite-toolbar">
-                    <ul class="toolbarList">
-                        <li class="toolbarListItem">
-                            <input type="file" id="photoInput">
-                            <i class="fa-regular fa-image"></i><!-- 이미지첨부 -->
-                        </li>
-                        <li class="toolbarListItem">
-                            <i class="fa-solid fa-check-to-slot"></i><!-- 투표 -->
-                        </li>
-                        <li class="toolbarListItem">
-                            <i class="fa-solid fa-divide"></i><!-- N빵 -->
-                        </li>
-                        <li class="toolbarListItem">
-                            <i class="fa-regular fa-calendar"></i><!-- 일정 -->
-                        </li>
-                    </ul>
-                </div>
+                    </div>
+                </section>
             </section>
-        </section>
-        <div class="postWrite-bottom">
-            <div class="setup-btn">
-                <i class="fa-solid fa-toggle-off"></i><!-- 설정 -->
-                <label class="write-setup" for="write-setup">댓글 사용</label>
+            <div class="postWrite-bottom">
+                <div class="setup-btn">
+                    <i class="fa-solid fa-toggle-off"></i><!-- 설정 -->
+                    <label class="write-setup" for="write-setup">댓글 사용</label>
+                </div>
+                <div class="submit-btn">
+                    <button class="postWrite-btn" type="toggle">
+                        게시
+                    </button>
+                </div>
             </div>
-            <div class="submit-btn">
-                <button type="submit" class="postWrite-btn">
-                    게시
-                </button>
-            </div>
-        </div>
+        </form>
+       
     </main>
+    <script src="../resources/js/member/postWrite.js"></script>
 </body>
 
 </html>
