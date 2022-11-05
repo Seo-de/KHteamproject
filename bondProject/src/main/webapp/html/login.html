@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>본드 | 로그인</title>
-    <link rel="shortcut icon" href="../resources/images/title-logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resources/css/login.css">
 </head>
 <body>
@@ -18,16 +18,22 @@
         <div class="login-title">로그인</div>
         <form action="#" method="post" id="loginFrm">
             <section class="inputbox">
-                <input type="text" name="inputEmail" placeholder="이메일 입력"
-                    autocomplete="off">
+                <input type="text" name="memberEmail" placeholder="이메일 입력" id="memberEmail">
             </section>
             <section class="inputbox">
-                <input type="password" name="inputPw" placeholder="비밀번호 입력">
+                <input type="password" name="memberPw" placeholder="비밀번호 입력" id="memberPw">
             </section>
-            <button class="inputbox login-btn">로그인</button>
+            <div class="loginCheck" id="loginCheck"></div>
+            <button class="inputbox login-btn" id="login-btn">로그인</button>
+
             <section class="saveId-area">
-                <input type="checkbox" name="saveId" id="saveId"> 
-                <label for="saveId">아이디 저장</label> 
+                <label for="saveId">
+                    <div class="saveIdArea" id="idCheck">
+                        <i class="fa-solid fa-check" id="idCheck2">
+                            <input type="checkbox" name="saveId" id="saveId"> 
+                        </i>
+                    </div>아이디 저장
+                </label> 
             </section>
 
             <p class="text-area">

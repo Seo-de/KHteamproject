@@ -27,10 +27,11 @@
             </section>
             <section class="signUp-area">
                 <input type="password" name="memberPw" id="memberPw" placeholder="비밀번호" required maxlegnth="20">
-                <div id="emailConfirm" class="coner">영어, 숫자, 특수문자(! @ ~ ? `)를 포함해 최소 8자리이상 사용해주세요</div>
                 <input type="password" name="memberPwConfirm" id="memberPwConfirm" placeholder="비밀번호 확인" required maxlegnth="20">
+                <div id="emailConfirm" class="coner">영어, 숫자, 특수문자(! @ ~ ? `)를 포함해 최소 8자리이상 사용해주세요</div>
             </section>
             <section class="signUp-area">
+                <div class="birth-title">이름</div>
                 <input type="text" name="memberName" id="memberName" placeholder="이름" maxlegnth="0" required>
             </section>
             <section class="signUp-area">
