@@ -1,1 +1,6 @@
-	SELECT * FROM "MEMBER";
+SELECT * FROM "MEMBER";
+	
+
+<-- 비밀번호 암호화 -->
+UPDATE "MEMBER" SET
+MEMBER_PW = '$2a$10$ZzONlW.LO2gXDNymEcCjVu1SLzzEsdnCstAC66nQIIbvSwtdAc/J.';
