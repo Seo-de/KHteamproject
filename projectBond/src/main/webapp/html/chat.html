@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅</title>
+</head>
+<body>
+    <h1>채팅 폼</h1>
+    <form action="#" onsubmit="submitChatMessageFrm(this); return false;" id="chatFrm">
+        <div>
+            <input name="writer" type="text" placeholder="이름" autocomplete="off">
+        </div>
+        <div>
+            <input name="body" type="text" placeholder="내용">
+        <div>
+            <input type="submit" value="작성">
+        </div>
+    </form>
+
+    <h1>채팅 메세지</h1>
+    
+    <div class="chat-messages"></div>
+
+    <script src="../resources/js/member/chat.js"></script>
+</body>
+</html>
