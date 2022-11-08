@@ -26,9 +26,9 @@ main>.postWrite{
 }
 .title-area{
     width: 80%;
-    font-size: 19x;
+    font-size: 22px;
     text-align: center;
-    padding: 15px 0px 15px 120px;
+    padding: 20px 0px 15px 120px;
 }
 .close-btn{ 
     border: none;
@@ -37,23 +37,12 @@ main>.postWrite{
     cursor: pointer;
     font-weight: bold;
     position: absolute;
-    right: 15px;
-    bottom: 10px;
+    right: 25px;
+    bottom: 15px;
 }
 
-.postWrite-font{
-    /*background-color: #21c5322e;*/
-    font-size: 16px;
-    padding: 0 20px;
-    font-weight: lighter;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.postWrite-font i{
-    margin: 10px;
-}
 .postWrite-content{
-    height: 330px;
+    height: 360px;
     /*border: 1px solid red;*/
     margin-bottom: 13px;
 }
@@ -96,13 +85,14 @@ ul i{
 }
 .postWrite-btn{
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #21c531;
     border: none;
     border-radius: 3px;
     color: white;
     height: 40px;
     cursor: pointer;
+    font-weight: bold;
 }
 .postWrite-btn:active{
     transform: scale(0.95);
