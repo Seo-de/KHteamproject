@@ -132,3 +132,13 @@ main{
     color: black;
     font-size: 14px;
 }
+
+
+.okImg{
+    width: 600px;
+    height: 400px;
+}
+.okImg>img{
+    width: 100%;
+    height: 100%;
+}
