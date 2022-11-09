@@ -22,7 +22,8 @@ main{
     font-weight: bold;
     color: #777;
     position: absolute;
-    margin-left: 140px;
+    margin-left: 130px;
+    margin-top: 10px;
 }
 .profile{
     background-color: white;
