@@ -16,7 +16,7 @@ body{
 main{
     width: 60%;
     min-width: 500px;
-    max-width: 600px;
+    max-width: 670px;
 }
 .top-logo{
     border-bottom: solid 1px #ddd;
@@ -76,17 +76,22 @@ main{
 .con-title{
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 60px;
-    font-size: 21px;
-    min-width: 465px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    min-width: 670px;
 
 }
 .con-subtitle{
     text-align: center;
     margin-bottom: 70px;
 }
-.con-subtitle>h3{
-    margin: 15px 0;
+.con-subtitle>.h31{
+    font-size: 30px;
+    margin: 25px 0 30px 0;
+}
+.con-subtitle>.h32{
+    font-size: 20px;
+    margin: 25px 0;
 }
 .move{
     display: flex;
@@ -94,11 +99,11 @@ main{
 }
 .move div{
     border: 1px solid #21c531;
-    width: 200px;
+    width: 220px;
     height: 70px;
     text-align: center;
     font-size: 25px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 3px;
     padding-top: 20px;
     cursor: pointer;
@@ -106,6 +111,7 @@ main{
 }
 .move a{
     text-decoration: none;
+    font-weight: bold;
 
 }
 .move div:hover{
@@ -131,14 +137,4 @@ main{
 .no{
     color: black;
     font-size: 14px;
-}
-
-
-.okImg{
-    width: 600px;
-    height: 400px;
-}
-.okImg>img{
-    width: 100%;
-    height: 100%;
 }
