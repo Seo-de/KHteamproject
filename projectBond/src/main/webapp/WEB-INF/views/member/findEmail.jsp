@@ -16,7 +16,7 @@
     </div>
     <main>
         <div class="find-title findEmail">이메일 찾기</div>
-        <form action="#" method="post">
+        <form action="/member/findEmail" method="post">
             <section class="inputbox">
                 <input type="text" name="inputEmail" placeholder="이름 입력" required
                     autocomplete="off">
