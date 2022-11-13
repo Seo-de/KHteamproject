@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프로필 선택 시 보이는 팝업창</title>
-    <link rel="stylesheet" href="../resources/css/profile.css">
+    <link rel="stylesheet" href="/resources/css/profile.css">
     <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,30 +16,35 @@
     <main>
         <div class="profile1">
             
-            <button type="button" class="clickProfile close-btn">
+            <button type="button" class="close-btn">
                 <i class="fa-solid fa-x"></i>
             </button>
                 
 
-            <form action="#" name="profile-area">
+            <form action="/clickProfile" name="profile-area">
                 <section class="profile-area">
                     <div class="profile-image">
-                        <img src="../resources/images/user.png" class="image" alt="">
+                        <img src="/resources/images/user.png" class="image" alt="">
                     </div>
             
-                    <h3 class="memberName" name="memberName">회원이름</h3>
+                    <h3 class="memberName" name="memberName">${loginMember.memberName}</h3>
                     <section class="member">
                         <div class="leader-yn">
-                            <div class="profile-member">멤버</div>
+                            <div class="profile-member">
+                                <c:choose>
+                                    <c:when test="{leaderYN == 'N'}">멤버</c:when>
+                                    <c:when test="{leaderYN == 'Y'}">모임장</c:when>
+                                </c:choose>
+                            </div>
                         </div>
-                            <div class="join-date">since 2022년 10월 27일</div>
+                        <div class="join-date">since ${loginMember.memberSignUpDate}</div>
 
                     </section>
             
                     <div class="birth">
                         <div class="birth-title">생일 : </div>
                         <div class="memberBirth">
-                            2022년 10월 29일
+                            ${loginMember.memberBirth}
                         </div>
 
                     </div>

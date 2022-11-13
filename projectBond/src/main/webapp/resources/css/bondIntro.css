@@ -3,21 +3,19 @@
     margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'nanumsquare', serif;
 }
+
 main{
     display: flex;
     justify-content: center;
     background-color: white;
 }
-
 .bandIntro{
     min-width: 632px;
     min-height: 310px;
-    max-height: 90vh;
+    max-height: 1000px;
     border: 1px solid #ddd;
 }
-.introArea{
-    display: flex;
-}
+
 .introTitle{
     padding: 0 25px;
     width: 100%;
@@ -29,64 +27,30 @@ main{
     align-items: center;
 }
 
-.img-name{
-    padding: 30px 20px 30px 40px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 420px;
-
-}
-.showImg{
-    width: 208px;
-    height: 157px;
-    border-radius: 3px;
-    background-color: #ddd;
-    margin-bottom: 25px;
-    margin-right: 20px;
-}
-.showImg>.fa-camera{
-    font-size: 70px;
-    padding: 40px 0 0 70px;
-    color: white;
-}
-.inputImg{
-    width: 100px;
-    height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: #21c531;
-    cursor: pointer;
-    text-align: center;
-    padding-top: 9px;
-    font-size: 17px;
-    font-weight: bold;
-    margin-left: 50px;
-}
-.inputImg>input{
-    display: none;
-    cursor: pointer;
-}
-.inputImg > label{
-    cursor: pointer;
+.introArea{
+    padding: 40px 50px 20px ;
 }
 
 .namearea{
-    margin-top: 10px;
     width: 100%;
-    margin-bottom: 30px;
+    display: flex;
+    height: 30px;
+    margin-bottom: 40px;
 }
 .nameTitle{
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-top: 3px;
+    
 }
 .nameWrite{
-    width: 200px;
+    width: 400px;
     font-size: 17px;
     padding-left: 10px;
     border: none;
     border-bottom: 1px solid#ddd;
+    margin-right: 10px;
 }
 .nameWrite:focus{
     outline: none;
@@ -100,26 +64,84 @@ main{
     background-color: white;
 }
 .namearea .fa-xmark{
-    font-size: 18px;
+    padding-top: 3px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .introWrite{
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
 }
 .writeTitle{
     font-size: 18px;
     font-weight: bold;
-    margin-top: 40px;
     margin-bottom: 20px;
+    height: 30px;
 }
 .introWrite>textarea{
-    width: 290px;
-    height: 290px;
+    width: 500px;
+    height: 200px;
     resize: none;
     border: 1px solid #ddd;
     border-radius: 3px;
+    padding: 15px;
+    margin-left: 10px;
+}
+.introWrite>textarea:focus{
+    outline: none;
+}
+
+.imgarea{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    margin-left: 30px;
+}
+.showImg{
+    width: 208px;
+    height: 157px;
+    border-radius: 3px;
+    background-color: #ddd;
+    margin: 0 20px 25px;
+    display: inline-block;
+}
+.showImg>.fa-camera{
+    width: 100%; height: 100%;
+    font-size: 80px;
+    color: white;
+    padding: 40px 63px;
+}
+.imgUpdateArea{
+    width: 200px;
+    padding-top: 40px;
+}
+.imgTitle{
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.inputImg{
+    width: 110px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #21c531;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 60px 0 0 40px;
+}
+.inputImg>input{
+    display: none;
+    cursor: pointer;
+}
+.inputImg > label{
+    cursor: pointer;
 }
 
 .intro-btn{
@@ -131,7 +153,7 @@ main{
 .intro-btn>button{
     width: 100%;
     height: 100%;
-    font-size: 18px;
+    font-size: 23px;
     background-color: #21c531;
     color: white;
     font-weight: bold;

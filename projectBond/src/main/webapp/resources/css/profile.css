@@ -13,8 +13,14 @@ main{
     z-index: 2000;
 }
 /* clickProfile */
-.close-btn{
-    padding: 10px 10px 0 0;
+.profile1, .profile2{
+    background-color: white;
+    width: 320px; height: 412px;
+    text-align: center;
+    display: block;
+}
+.profile1 .close-btn{
+    padding: 15px 10px 0 0;
     border: none;
     font-size: 21px;
     background-color: white;
@@ -22,13 +28,18 @@ main{
     font-weight: bold;
     color: #777;
     position: absolute;
-    margin-left: 140px;
+    margin-left: 125px;
 }
-.profile{
+.profile2 .close-btn{
+    padding: 5px 10px 0 0;
+    border: none;
+    font-size: 21px;
     background-color: white;
-    width: 320px; height: 412px;
-    text-align: center;
-    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    position: absolute;
+    margin-left: 125px;
 }
 .profile-area{
     display: flex;
@@ -53,7 +64,7 @@ main{
 
 /*  clickProfile 설정 */
 .profile-area>.memberName{
-    margin-bottom: 15px;
+    margin: 10px 0 15px;
     font-size: 24px;
 }
 #inputImage{
@@ -90,6 +101,9 @@ main{
 .report{
     font-size: 13px;
     cursor: pointer;
+    border: none;
+    background-color: white;
+    margin-top: 7px;
 }
 .report:hover{
     color: red;
@@ -98,7 +112,7 @@ main{
 
 /* myProfile설정 */
 .myProfile-title{
-    margin-top: 25px;
+    margin-top: 33px;
     font-size: 18px;
 }
 .myProfile{
@@ -150,7 +164,7 @@ main{
     display: flex;
     width: 60%;
     border-bottom: 1px solid #777;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 .memberName:focus{
     outline: none;
@@ -181,10 +195,10 @@ main{
 
 .submit-btn{
     width: 64%;
-    height: 35px;
+    height: 40px;
     background-color: #21c531;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
     border-radius: 3px;
     font-weight: bold;

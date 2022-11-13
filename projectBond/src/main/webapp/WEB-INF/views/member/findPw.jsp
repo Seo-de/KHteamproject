@@ -1,5 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +31,6 @@
                     <p class="noInput-">- 빼고 입력해주세요.</p>
             </section>
             <button class="inputbox findPw-btn">비밀번호 찾기</button>
-            <!-- **** 입력받을 값들을 다시 생각해보자 **** -->
         </form>
     </main>
 </body>
