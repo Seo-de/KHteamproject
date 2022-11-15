@@ -12,19 +12,19 @@
 </head>
 <body>
     <div class="top-logo">
-        <a href="../html/main.html">
+        <a href="/html/main.html">
             <img src="/resources/images/home-logo.png" id="home-logo">
         </a>
     </div>
     <main>
         <div class="find-title findEmail">이메일 찾기</div>
-        <form action="/member/findEmail" method="post">
+        <form action="/member/findEmail" method="post" id="findEmail-frm">
             <section class="inputbox">
-                <input type="text" name="inputEmail" placeholder="이름 입력" required
+                <input type="text" name="inputName" placeholder="이름 입력" id="e-inputName"
                     autocomplete="off">
             </section>
             <section class="inputbox">
-                <input type="text" name="inputPw" placeholder="전화번호 입력" required
+                <input type="text" name="inputPw" placeholder="전화번호 입력" id="e-inputTel"
                     autocomplete="off">
                     <p class="noInput-">- 빼고 입력해주세요.</p>
             </section>
@@ -32,5 +32,6 @@
 
         </form>
     </main>
+    <script src="/resources/js/member/find.js"></script>
 </body>
 </html>
