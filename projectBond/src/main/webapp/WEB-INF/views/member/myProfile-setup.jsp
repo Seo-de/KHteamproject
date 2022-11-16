@@ -14,17 +14,18 @@
 <body>
 
     <main>
-    <form action="#">
+    <form action="">
         <div class="profile2">
             <button type="button" class="myProfile close-btn ">
                 <i class="fa-solid fa-x"></i>
             </button>
             <div class="myProfile-title">${loginMember.memberName}님의 프로필 설정</div>
             
-            <form action="#" name="myProfile-area">
+            <form action="/myprofile" name="myProfile-area" 
+                    enctype="multipart/form-data" onsubmit="return profileValidate()">
                 <section class="myProfile-area">
                     <div class="myProfile-image">
-                        <img src="../resources/images/user.png" class="image" alt="">
+                        <img src="/resources/images/user.png" class="image" id="myProfileImg">
                         <div class="update-profile-image">
                             <input type="file" accept="image/*" id="inputImage">
                             <label for="inputImage"><i class="fa-solid fa-camera"></i></label>
@@ -46,8 +47,8 @@
     </form>
 
         
-
     </main>
+    <script src="/resources/js/member/profileImg.js"></script>
 </body>
 </html>
             
