@@ -14,14 +14,15 @@
 <body>
 
     <main>
-    <form action="#">
+    <form action="">
         <div class="profile2">
             <button type="button" class="myProfile close-btn ">
                 <i class="fa-solid fa-x"></i>
             </button>
             <div class="myProfile-title">${loginMember.memberName}님의 프로필 설정</div>
             
-            <form action="#" name="myProfile-area">
+            <form action="/myprofile" name="myProfile-area" 
+                    enctype="multipart/form-data" onsubmit="return profileValidate()">
                 <section class="myProfile-area">
                     <div class="myProfile-image">
                         <div class="update-profile-image">
@@ -51,8 +52,8 @@
     </form>
 
         
-
     </main>
+    <script src="/resources/js/member/profileImg.js"></script>
 </body>
 </html>
             
