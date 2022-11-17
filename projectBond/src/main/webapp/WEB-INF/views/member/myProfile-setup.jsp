@@ -24,8 +24,13 @@
             <form action="#" name="myProfile-area">
                 <section class="myProfile-area">
                     <div class="myProfile-image">
-                        <img src="../resources/images/user.png" class="image" alt="">
                         <div class="update-profile-image">
+                            <c:if test="${empty loginMember.profileImg}">
+                                <img src="../resources/images/user.png" class="image" alt="">
+                            </c:if>
+                            <c:if test="${!empty loginMember.profileImg}">
+                                <img src="${loginMember.profileImg}" class="image">
+                            </c:if>
                             <input type="file" accept="image/*" id="inputImage">
                             <label for="inputImage"><i class="fa-solid fa-camera"></i></label>
                         </div>

@@ -47,7 +47,12 @@
                 </div>
                 <div class="member-list">
                     <div class="member-image">
-                        <img src="/resources/images/user.png" alt="">
+                        <c:if test="${empty loginMember.profileImg}">
+                            <img src="/resources/images/user.png">
+                        </c:if>
+                        <c:if test="${!empty loginMember.profileImg}"">
+                            <img src="${loginMember.profileImg}" id="profile-img">
+                        </c:if>
                     </div>
                     <div class="member-name" name="memberName" id="memberName">회원이름</div>
                     <div class="member-report">
