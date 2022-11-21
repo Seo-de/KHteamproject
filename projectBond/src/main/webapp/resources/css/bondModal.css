@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+.modal{
+    border: 1px solid black;
+    width: 380px;
+    height: 380px;
+    background-color: white;
+}
