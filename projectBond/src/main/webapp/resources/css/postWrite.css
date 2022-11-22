@@ -5,9 +5,8 @@
 }
 main{
     width: 80%; 
-    height: 550px;
+    height: 500px;
     max-width: 600px;
-    max-height: 600px;
     border: 1px solid black;
     margin: auto;
     margin-top: 130px;
@@ -26,9 +25,9 @@ main>.postWrite{
 }
 .title-area{
     width: 80%;
-    font-size: 19x;
+    font-size: 23x;
     text-align: center;
-    padding: 30px 0px 15px 120px;
+    padding: 35px 0px 15px 120px;
 }
 .close-btn{ 
     border: none;
@@ -37,12 +36,12 @@ main>.postWrite{
     cursor: pointer;
     font-weight: bold;
     position: absolute;
-    right: 15px;
-    bottom: 10px;
+    right: 29px;
+    bottom: 12px;
 }
 
 .postWrite-content{
-    min-height: 330px;
+    height: 330px;
     max-height: 500px;
     /*border: 1px solid red;*/
     margin-bottom: 13px;
@@ -52,7 +51,7 @@ textarea{
     width: 100%;
     height: 100%;
     font-size: 18px;
-    padding: 20px;
+    padding: 25px 45px;
     border: none;
     line-height: 24px;
 }
@@ -70,7 +69,8 @@ textarea:focus{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ddd;
-    height: 100%;
+    height: 80px;
+
 }
 .postWrite-btn{
     width: 100%;
@@ -92,22 +92,52 @@ textarea:focus{
 }
 .write-setup{
     cursor: pointer;
-
+    display: none;
 }
 .fa-toggle-off{
     font-size: 20px;
     padding-right: 15px;
     margin-left: 20px;
     color: #777;
+    cursor: pointer;
 }
 .postWrite-btn{
     font-size: 15px;
     width: 110px;
-    margin-right: 10px;
+    margin-right: 20px;
     letter-spacing: 5px;
     border-radius: 5px;
+    font-weight: bold;
 }
 .submit-btn{
     display: flex;
     align-items: center;
+}
+
+.ok{
+    color: #21c531;
+}
+.no{
+    color: #777;
+}
+
+
+.postWrite-toolbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin-left:10px;
+}
+#photoInput{display: none;}
+
+ul i{
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+    color: #777;
 }

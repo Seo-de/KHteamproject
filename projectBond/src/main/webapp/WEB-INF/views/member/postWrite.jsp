@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글쓰기</title>
-    <link rel="stylesheet" href="../resources/css/postWrite.css">
+    <link rel="stylesheet" href="/resources/css/postWrite.css">
     <script src="https://kit.fontawesome.com/785870d879.js" crossorigin="anonymous"></script>
 </head>
 
@@ -58,7 +61,7 @@
         </form>
        
     </main>
-    <script src="../resources/js/member/postWrite.js"></script>
+    <script src="/resources/js/member/postWrite.js"></script>
 </body>
 
 </html>
