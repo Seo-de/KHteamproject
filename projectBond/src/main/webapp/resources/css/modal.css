@@ -84,7 +84,7 @@ main{
     display: flex;
 }
 #changePw{
-    padding: 20px;
+    padding: 20px 40px;
 }
 #changePw > input{
     width: 250px;
