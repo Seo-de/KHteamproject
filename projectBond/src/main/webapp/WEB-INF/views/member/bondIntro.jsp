@@ -14,32 +14,47 @@
 </head>
 <body>
     <main>
-        <form action="/bondIntro" class="bandIntro" id="bandIntro">
+        <form action="/bond/bondInfo" class="bandIntro" id="bandIntroFrm">
             <div class="introTitle">본드 소개</div>
             <div class="introArea">
                 <div class="namearea">
                     <div class="nameTitle">본드 이름</div>
-                    <input type="text" class="nameWrite" value="${groupName}">
+                    <input type="text" class="nameWrite" value="${groupInfo.groupName}">
                     <button type="reset"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="introWrite">
                     <div class="writeTitle">본드 소개글</div>
-                    <textarea name="introWrite" id="">${groupComment}</textarea>
+                    <textarea name="introWrite" id="">${groupInfo.groupComment}</textarea>
                 </div>
                 <div class="imgTitle">본드 대표 이미지</div>
+
                 <div class="imgarea">
-                    <div class="showImg"><i class="fa-solid fa-camera"></i></div>
-                    <div class="inputImg">
-                        <input type="file" id="inputImg" value="${}">
-                        <label for="inputImg">사진 수정</label>
+                    <div class="showImg">
+                        <c:if test="${!empty groupInfo.groupImage}">
+                            <img src="${groupInfo.groupImage.}" id="group-img">
+                        </c:if>
+                        <c:if test="${empty groupInfo.groupImage}">
+                            <img src="/resources/images//resources/images/bond/profile/non-profile.png" id="group-img">
+                        </c:if>
+                    </div>
+                    <div class="btnArea">
+                        <div class="inputImg">
+                            <input type="file" id="inputImg">
+                            <label for="inputImg">이미지 수정</label>
+                        </div>
+                        <div class="deleteImg">
+                            <button type="button">이미지 삭제</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
                         
             <div class="intro-btn">
-                <button>저 장</button>
+                <button>본드 소개 저장</button>
             </div>
         </form>
     </main>
+    <script src=""></script>
 </body>
 </html>

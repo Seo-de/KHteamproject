@@ -35,26 +35,26 @@
                 <div class="member-title">멤버</div>
                 <div class="member-list">
                     <div class="member-image">
-                        <img src="/resources/images/user.png" alt="">
+                        <c:if test="${empty loginMember.profileImg}">
+                            <img src="/resources/images/user.png">
+                        </c:if>
+                        <c:if test="${!empty loginMember.profileImg}">
+                            <img src="${loginMember.profileImg}" id="profile-img">
+                        </c:if>
                     </div>
-                    <div class="member-name" name="memberName" id="memberName">회원이름
-                        <div class="leader"><i class="fa-solid fa-crown"></i>리더</div>
-
-                    </div>
+                    <div class="member-name" name="memberName" id="memberName">${loginMember.memberName}</div>
                     <div class="member-report">
                         <i class="fa-solid fa-user-slash"></i>
                     </div>
                 </div>
                 <div class="member-list">
                     <div class="member-image">
-                        <c:if test="${empty loginMember.profileImg}">
-                            <img src="/resources/images/user.png">
-                        </c:if>
-                        <c:if test="${!empty loginMember.profileImg}"">
-                            <img src="${loginMember.profileImg}" id="profile-img">
-                        </c:if>
+                        <img src="/resources/images/user.png" alt="">
                     </div>
-                    <div class="member-name" name="memberName" id="memberName">회원이름</div>
+                    <div class="member-name" name="memberName" id="memberName">${loginMember.memberName}
+                        <div class="leader"><i class="fa-solid fa-crown"></i>리더</div>
+
+                    </div>
                     <div class="member-report">
                         <i class="fa-solid fa-user-slash"></i>
                     </div>

@@ -84,13 +84,13 @@ main{
 }
 .member-all>.member-title{
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 .member-all>.member-list{
-    height: 88px;
-    /* border: 1px solid black; */
-    display: flex;
+    height: 88px;    display: flex;
     padding: 15px 0;
+    border-bottom: 1px solid #ddd;
 }
 .member-all .member-image{
     height: 50px;
@@ -150,9 +150,9 @@ main{
     color: #21c531;
 }
 .member-invite-bottom{
-    border-top: 1px solid #ddd;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 13px;
 }
 .member-invite-btn button{
     font-size: 15px;
